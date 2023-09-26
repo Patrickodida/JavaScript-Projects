@@ -1,0 +1,106 @@
+/*  Font  */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+
+/* Varaibales */
+:root {
+--fnt-primary: 'Orbitron', sans-serif;
+--fnt-secondary: 'Roboto', sans-serif;
+/* Dark Color */
+--clr-primary: #222;
+/* Lighter colors */
+--clr-primary-1: #cedede;
+--clr-primary-2: #948f8f;
+--clr-primary-3: #fff;
+/* counter-colors */
+--clr-secondary: #016801;
+--clr-secondary-1: #d80b0b;
+--radius: 0.5rem;
+--padding: 0.25rem 0.5rem;
+--spacing: 0.1rem;
+--transition: all 0.3s linear;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fnt-secondary);
+    font-size: 1rem;
+    background: var(--clr-primary-1);
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: var(--clr-primary)
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#value {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+button {
+    display: inline-block;
+    margin: 0.5rem;
+    align-items: center;
+}
+.btn {
+   text-transform: uppercase;
+   background: transparent;
+   color: var(--clr-primary);
+   padding: 0.4rem 1rem;
+   letter-spacing: var(--spacing);
+   display: inline-block;
+   transition: var(--transition);
+   font-size: 1rem;
+   border: 2px solid var(--clr-primary);
+   cursor: pointer;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+   border-radius: var(--radius);
+   margin: 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    #value {
+        font-size: 6.5rem;
+    }
+    .btn {
+        font-size: 1.25rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+    #value {
+        font-size: 6.75rem;
+    }
+}
+
+.btn:hover {
+    background: var(--clr-primary);
+    color: var(--clr-primary-3);
+}
+
